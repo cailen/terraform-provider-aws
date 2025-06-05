@@ -44,6 +44,11 @@ func (p *servicePackage) FrameworkResources(ctx context.Context) []*types.Servic
 				IdentifierAttribute: names.AttrARN,
 			},
 		},
+		{
+			Factory:  newResourceProtectConfiguration,
+			TypeName: "aws_pinpointsmsvoicev2_protect_configuration",
+			Name:     "Protect Configuration",
+		},
 	}
 }
 
